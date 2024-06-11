@@ -20,7 +20,7 @@ This project demonstrates an Overtime Request Form bullt using HTML, CSS, and Ja
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/overtime-request-form.git
+   git clone https://github.com/AntonioEmmanuelMalabago/overtime-request-form.git
    cd overtime-request-form
    ```
 
