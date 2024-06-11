@@ -173,8 +173,10 @@ button {
   left: 0;
   right: 0;
   margin: auto;
-  max-width: 450px;
-  max-height: 3000px;
+  max-width: 600px;
+  max-height: 800px;
+  min-width: 400px;
+  min-height: 700px;
   background-color: #1b1b32;
   padding: 20px 20px 80px 20px;
   border: 1px solid white;
