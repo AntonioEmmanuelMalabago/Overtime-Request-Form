@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Overtime Request Form</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="title">Overtime Request Form</h1>
+    <p id="description">Please fill in the required information</p>
+    <div class="form">
+      <label for="name" id="name-label"
+        >Name<sup>*</sup
+        ><input id="name" type="text" placeholder="Enter your name" required
+      /></label>
+
+      <label for="role-dropdown"
+        >Which option best describes your Job Title?<sup>*</sup></label
+      >
+      <select name="role-dropdown" id="jobTitle" required>
+        <option id="" value="" disabled selected>Select Job Title</option>
+        <option id="app-development" value="Application Developer">
+          Application Development
+        </option>
+        <option id="infra-management" value="ICT Infrastructure Management">
+          ICT Infrastructure Management
+        </option>
+        <option id="planning" value="ICT Planning">ICT Planning</option>
+        <option id="info-security" value="Information Security">
+          Information Security
+        </option>
+        <option id="other" value="Others">Others</option>
+      </select>
+
+      <label for="employeeId" id="employee-id-label"
+        >Employee ID<sup>*</sup
+        ><input
+          id="employeeId"
+          type="text"
+          placeholder="Enter your employee ID"
+          required
+      /></label>
+
+      <label for="supervisor" id="supervisor-label"
+        >Supervisor<sup>*</sup
+        ><input
+          id="supervisor"
+          type="text"
+          placeholder="Enter your supervisor name"
+          required
+      /></label>
+
+      <label>Which division are you part of?<sup>*</sup></label>
+      <div name="radio-button">
+        <input
+          name="division"
+          id="department1"
+          type="radio"
+          value="Application Development Division"
+        />
+        <label for="department1">Application Development Division</label>
+      </div>
+      <div name="radio-button">
+        <input
+          name="division"
+          id="department2"
+          type="radio"
+          value="ICT Infrastructure Management Division"
+        />
+        <label for="department2">ICT Infrastructure Management Division</label>
+      </div>
+      <div name="radio-button">
+        <input
+          name="division"
+          id="department3"
+          type="radio"
+          value="Planning Division"
+        />
+        <label for="department3">Planning Division</label>
+      </div>
+      <div name="radio-button">
+        <input
+          name="division"
+          id="department4"
+          type="radio"
+          value="Information Security Division"
+        />
+        <label for="department4">Information Security Division</label>
+      </div>
+      <div name="radio-button">
+        <input name="division" id="department5" type="radio" value="Others" />
+        <label for="department5">Others</label>
+      </div>
+
+      <label for="rate" id="rate-label"
+        >Rate<sup>*</sup
+        ><input
+          id="rate"
+          type="number"
+          placeholder="Enter your hourly pay rate"
+          required
+      /></label>
+
+      <label for="date" id="date-label"
+        >Start Date<sup>*</sup
+        ><input type="date" id="startDate" placeholder="Start Date" />End
+        Date<sup>*</sup
+        ><input type="date" id="endDate" placeholder="End Date" required
+      /></label>
+
+      <label for="date" id="time-label"
+        >Start Time<sup>*</sup
+        ><input type="time" id="startTime" placeholder="Start Time" />End
+        Time<sup>*</sup
+        ><input type="time" id="endTime" placeholder="End Time" required
+      /></label>
+
+      <label for="explanation" id="explanation-label"
+        >Provide explanation of the work<sup>*</sup></label
+      >
+      <textarea
+        id="explanation"
+        rows="8"
+        placeholder="Enter your explanation here..."
+        required
+      ></textarea>
+
+      <br /><br />
+      <button onclick="generateForm()">Generate Form</button>
+      <br />
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+      <script src="script.js"></script>
+
+      <div class="popup" id="popup">
+        <canvas id="canvas"></canvas>
+        <div class="popup-buttons">
+          <button onclick="editForm()">Edit Details</button><br /><button
+            onclick="downloadPDF()"
+          >
+            Download PDF
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

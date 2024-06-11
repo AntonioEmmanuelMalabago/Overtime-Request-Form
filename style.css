@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+  margin: 10vh auto;
+  min-width: 500px;
+  max-width: 800px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #ffffff;
+  background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+}
+
+h1,
+p {
+  text-align: center;
+  font-weight: normal;
+}
+
+h1 {
+  margin-bottom: 7px;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+span {
+  font-size: 16px;
+}
+
+.form {
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  padding: 4vh 3vw;
+  background-color: #1b1b32;
+  opacity: 0.8;
+  max-height: 1180px;
+}
+
+fieldset {
+  border: none;
+  margin: 0px;
+  padding: 0px 0px 15px 0px;
+}
+
+label,
+input,
+select {
+  display: block;
+  text-align: left;
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+}
+
+sup::before {
+  content: ' ';
+}
+
+sup {
+  color: red;
+}
+
+label[id='name-label'],
+label[id='employee-id-label'],
+label[id='supervisor-label'],
+label[id='rate-label'],
+label[id='date-label'],
+label[id='number-label'] {
+  padding: 0px 0px 15px 0px;
+}
+
+label[id='employee-id-label'],
+label[id='rate-label'],
+label[id='explanation-label'] {
+  margin-top: 10px;
+}
+
+label[id='date-label'],
+label[id='time-label'] {
+  display: flex;
+  align-items: center;
+  margin: 10px auto;
+}
+
+input[type='date'],
+input[type='time'] {
+  margin: auto;
+}
+
+input,
+select {
+  margin-top: 5px;
+}
+
+input[id='name'],
+input[id='employeeId'],
+input[id='supervisor'],
+input[id='rate'],
+select,
+textarea {
+  width: 100%;
+  padding: 7px 12px;
+  border-radius: 4px;
+}
+
+input[id='name'],
+input[id='employeeId'],
+input[id='supervisor'],
+input[id='rate'] {
+  width: 95%;
+}
+
+select {
+  padding-left: 9px;
+  font-size: 18px;
+}
+
+div[name='radio-button'],
+div[name='checkbox'] {
+  display: flex;
+  align-items: center;
+}
+
+input[type='radio'],
+input[type='checkbox'] {
+  margin: auto 10px auto 0px;
+  transform: scale(1.1);
+}
+
+textarea {
+  margin: 8px 0px 0px 0px;
+  width: 95%;
+  font-family: 'Poppins';
+  font-size: 18px;
+}
+
+button {
+  display: block;
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  width: 100%;
+  background-color: rgb(55, 175, 101);
+  color: white;
+  font-family: 'Poppins';
+  font-size: 16px;
+}
+
+.popup-container {
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  padding: 4vh 3vw;
+  background-color: #1b1b32;
+  max-height: 1050px;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  max-width: 450px;
+  max-height: 3000px;
+  background-color: #1b1b32;
+  padding: 20px 20px 80px 20px;
+  border: 1px solid white;
+  border-radius: 5px;
+  z-index: 1;
+  opacity: 1;
+}
+
+.popup-buttons {
+  display: flex;
+  gap: 5px;
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
