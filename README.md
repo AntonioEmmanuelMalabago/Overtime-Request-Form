@@ -11,7 +11,7 @@ This project demonstrates an Overtime Request Form bullt using HTML, CSS, and Ja
 ## Prerequisites
 
 - Code editor for rendering HTML, CSS, and JavaScript files.
-- [jsPDF](<(https://github.com/parallax/jsPDF)>) library for generating PDFs.
+- [jsPDF](https://github.com/parallax/jsPDF) library for generating PDFs.
 
 ## Getting Started
 
@@ -50,5 +50,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE.txt) 
 
 ## Acknowledgements
 
-- [jsPDF](<(https://github.com/parallax/jsPDF)>) - javaScript library to generate PDFs
+- [jsPDF](https://github.com/parallax/jsPDF) - javaScript library to generate PDFs
 - [Google Fonts](https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap) - Poppins font
